@@ -1,0 +1,18 @@
+{
+    "type":"Poison",
+    "power":null,
+    "accuracy":75,
+    "cat":"effect",
+    "traduction":{
+        "name":{
+            "spanish":"Polvo veneno",
+            "english":"Poison powder"
+        },
+        "desc":{
+            "spanish":"El usuario esparce una nube de polvo tóxico que envenena a su oponente",
+            "english":"The user scatters a cloud of toxic powder that poisons the target."
+        }
+    },
+    "effect":"poison_opponent",
+    "pp":35
+}

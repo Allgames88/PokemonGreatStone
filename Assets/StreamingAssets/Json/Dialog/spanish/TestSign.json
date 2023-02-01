@@ -1,0 +1,10 @@
+{
+    "name":"Test sign",
+    "content":[
+        {"list":["Hay algo escrito en este cartel..."]},
+        {"list":["Pulsa el botón adecuado para leer este cartel."]},
+        {"list":["Acavas de leer lo que pone en el cartel."]},
+        {"list":["Te relajas al saber lo que pone en el cartel."]},
+        {"list":["Nunca sabrás lo que pone en este cartel.","A no ser...."]}
+    ]
+}

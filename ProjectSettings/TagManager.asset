@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NPC
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - obstacles
+  - GUI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 423249489
+    locked: 0
+  - name: Decorations
+    uniqueID: 1169410151
+    locked: 0
+  - name: SecondDecoration
+    uniqueID: 3467233179
+    locked: 0
+  - name: ThirdDecoration
+    uniqueID: 3020947015
+    locked: 0
+  - name: SecondTrees
+    uniqueID: 4149558163
+    locked: 0
+  - name: ThirdTrees
+    uniqueID: 877562151
+    locked: 0
+  - name: Player
+    uniqueID: 71534081
+    locked: 0
+  - name: longGrass
+    uniqueID: 1841340869
+    locked: 0
+  - name: Overplayer
+    uniqueID: 1148281139
+    locked: 0

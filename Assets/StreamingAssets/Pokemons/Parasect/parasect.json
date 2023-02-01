@@ -1,0 +1,27 @@
+{
+    "opScale":{
+        "x":0.8,
+        "y":0.8
+    },
+    "texture":"parasect.png",
+    "Mytexture":"parasect_myPoke.png",
+    "Name":"Parasect",
+    "stats":{
+        "PS":60
+    },
+    "movePool":[
+        {
+            "move":"scratch",
+            "type":"level",
+            "level":5
+        },{
+            "move":"poison_powder",
+            "type":"level",
+            "level":5
+        },{
+            "move":"fury_cutter",
+            "type":"level",
+            "level":5
+        }
+    ]
+}

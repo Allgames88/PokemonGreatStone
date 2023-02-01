@@ -1,0 +1,1032 @@
+fileFormatVersion: 2
+guid: a5e74fdbe22ab814fa3c26a3c97a68b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 305587725942168834
+    second: thrown_pokeball_0
+  - first:
+      213: -5782021172668061051
+    second: thrown_pokeball_1
+  - first:
+      213: 7798434626864886219
+    second: thrown_pokeball_2
+  - first:
+      213: -6627901122849406742
+    second: thrown_pokeball_3
+  - first:
+      213: 5693463229965116550
+    second: thrown_pokeball_4
+  - first:
+      213: -1470057966333214164
+    second: thrown_pokeball_5
+  - first:
+      213: -8060701605106759919
+    second: thrown_pokeball_6
+  - first:
+      213: 6157368670944516821
+    second: thrown_pokeball_7
+  - first:
+      213: 3841129696994989260
+    second: thrown_pokeball_8
+  - first:
+      213: 7660232568643567339
+    second: thrown_pokeball_9
+  - first:
+      213: 8855131811495746629
+    second: thrown_pokeball_10
+  - first:
+      213: 222435184256652196
+    second: thrown_pokeball_11
+  - first:
+      213: -6653243497298462141
+    second: thrown_pokeball_12
+  - first:
+      213: -8692196667652673337
+    second: thrown_pokeball_13
+  - first:
+      213: -6889393720225760589
+    second: thrown_pokeball_14
+  - first:
+      213: 666033207954178023
+    second: thrown_pokeball_15
+  - first:
+      213: 3242305002122694680
+    second: thrown_pokeball_16
+  - first:
+      213: 2939582784858993099
+    second: thrown_pokeball_17
+  - first:
+      213: 7158750988499719202
+    second: thrown_pokeball_18
+  - first:
+      213: -730077693311807168
+    second: thrown_pokeball_19
+  - first:
+      213: -878143256332971547
+    second: thrown_pokeball_20
+  - first:
+      213: -9176733301574973601
+    second: thrown_pokeball_21
+  - first:
+      213: -2691974688274606565
+    second: thrown_pokeball_22
+  - first:
+      213: -2601500455344251752
+    second: thrown_pokeball_23
+  - first:
+      213: -8943469329358693425
+    second: thrown_pokeball_24
+  - first:
+      213: 1523608790280926447
+    second: thrown_pokeball_25
+  - first:
+      213: 5864230847976673773
+    second: thrown_pokeball_26
+  - first:
+      213: 974563944551489811
+    second: thrown_pokeball_27
+  - first:
+      213: -6409541521561333618
+    second: thrown_pokeball_28
+  - first:
+      213: 2117877243313056621
+    second: thrown_pokeball_29
+  - first:
+      213: 4020779356983025155
+    second: thrown_pokeball_30
+  - first:
+      213: -4540556244332824815
+    second: thrown_pokeball_31
+  - first:
+      213: 8044094945788529565
+    second: thrown_pokeball_32
+  - first:
+      213: -1567026300178319817
+    second: thrown_pokeball_33
+  - first:
+      213: -4362324441909591962
+    second: thrown_pokeball_34
+  - first:
+      213: -8911417224977934086
+    second: thrown_pokeball_35
+  - first:
+      213: -3851930563239130812
+    second: thrown_pokeball_36
+  - first:
+      213: -2146772217809985016
+    second: thrown_pokeball_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: thrown_pokeball_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 77
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d908cea6aad3400800000000000000
+      internalID: 305587725942168834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 77
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a255fb06222cfa0800000000000000
+      internalID: -5782021172668061051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 77
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1336aa9fa993c60800000000000000
+      internalID: 7798434626864886219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 77
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0062e7b07f404a0800000000000000
+      internalID: -6627901122849406742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_4
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 77
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684a1d374ae330f40800000000000000
+      internalID: 5693463229965116550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_5
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 77
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22c97d711e499be0800000000000000
+      internalID: -1470057966333214164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 77
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117c03bf892a22090800000000000000
+      internalID: -8060701605106759919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_7
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 77
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da54cede2e537550800000000000000
+      internalID: 6157368670944516821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 77
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc41795bb1f6e4530800000000000000
+      internalID: 3841129696994989260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beeb0ee7fec9e4a60800000000000000
+      internalID: 7660232568643567339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_10
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c177f477fb3ea70800000000000000
+      internalID: 8855131811495746629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_11
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a39a2f1f9f361300800000000000000
+      internalID: 222435184256652196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_12
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34af8532a4eeaa3a0800000000000000
+      internalID: -6653243497298462141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_13
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c07aba1f2d1f5780800000000000000
+      internalID: -8692196667652673337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_14
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baf22cb9e4f360a0800000000000000
+      internalID: -6889393720225760589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eff8b08ca93e3900800000000000000
+      internalID: 666033207954178023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_16
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810def0983bfefc20800000000000000
+      internalID: 3242305002122694680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_17
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1bf5fd7fe7bc820800000000000000
+      internalID: 2939582784858993099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_18
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 54
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2249009681ef85360800000000000000
+      internalID: 7158750988499719202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 31
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04196bfb43e3ed5f0800000000000000
+      internalID: -730077693311807168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_20
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 31
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e15e586c5530d3f0800000000000000
+      internalID: -878143256332971547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_21
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 31
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f574021cea1b5a080800000000000000
+      internalID: -9176733301574973601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_22
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 31
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b169c01a84f24aad0800000000000000
+      internalID: -2691974688274606565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_23
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 31
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c50348e1d95ebd0800000000000000
+      internalID: -2601500455344251752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_24
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 31
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb59fb870a62e380800000000000000
+      internalID: -8943469329358693425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 31
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe47b515f12f42510800000000000000
+      internalID: 1523608790280926447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_26
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 31
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1998ed2eee16150800000000000000
+      internalID: 5864230847976673773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_27
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 31
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31125ed7eb8568d00800000000000000
+      internalID: 974563944551489811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80583202fbbc07a0800000000000000
+      internalID: -6409541521561333618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_29
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6bee8db126346d10800000000000000
+      internalID: 2117877243313056621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_30
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e523da58dacc730800000000000000
+      internalID: 4020779356983025155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_31
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1173cd51724bcf0c0800000000000000
+      internalID: -4540556244332824815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_32
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b8d37dbbd52af60800000000000000
+      internalID: 8044094945788529565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_33
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7363d28e1edc04ae0800000000000000
+      internalID: -1567026300178319817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66089fc5809e573c0800000000000000
+      internalID: -4362324441909591962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_35
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af894e3af39445480800000000000000
+      internalID: -8911417224977934086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_36
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44949a6af813b8ac0800000000000000
+      internalID: -3851930563239130812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thrown_pokeball_37
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 8
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80222cfba022532e0800000000000000
+      internalID: -2146772217809985016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

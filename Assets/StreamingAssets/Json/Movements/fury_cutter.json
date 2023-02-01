@@ -1,0 +1,18 @@
+{
+    "type":"Bug",
+    "power":40,
+    "accuracy":95,
+    "cat":"physical",
+    "traduction":{
+        "name":{
+            "spanish":"Paralizador",
+            "english":"Stun spore"
+        },
+        "desc":{
+            "spanish":"El usuario esparce una espesa nube de polvo que paraliza a su oponente",
+            "english":"The user scatters a cloud of numbing powder that paralyzes the target."
+        }
+    },
+    "effect":"double_power_consecutive",
+    "pp":20
+}

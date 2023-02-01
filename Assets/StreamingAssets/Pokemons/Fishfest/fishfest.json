@@ -1,0 +1,30 @@
+{
+    "opScale":{
+        "x":0.6225,
+        "y":0.6225
+    },
+    "texture":"fishfest.png",
+    "Name":"Fishfest",
+    "stats":{
+        "PS":100
+    },
+    "movePool":[
+        {
+            "move":"scratch",
+            "type":"level",
+            "level":5
+        },{
+            "move":"poison_powder",
+            "type":"level",
+            "level":5
+        },{
+            "move":"stun_spore",
+            "type":"level",
+            "level":5
+        },{
+            "move":"fury_cutter",
+            "type":"level",
+            "level":5
+        }
+    ]
+}

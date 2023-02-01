@@ -1,0 +1,17 @@
+{
+    "type":"Normal",
+    "power":40,
+    "accuracy":100,
+    "cat":"physical",
+    "traduction":{
+        "name":{
+            "spanish":"Arañazo",
+            "english":"Scratch"
+        },
+        "desc":{
+            "spanish":"Fuertes, puntiagudas y afiladas garras arañan al enemigo para causar daño.",
+            "english":"Hard, pointed, sharp claws rake the target to inflict damage."
+        }
+    },
+    "pp":35
+}

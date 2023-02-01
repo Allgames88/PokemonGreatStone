@@ -1,0 +1,18 @@
+{
+    "type":"Grass",
+    "power":null,
+    "accuracy":75,
+    "cat":"effect",
+    "traduction":{
+        "name":{
+            "spanish":"Paralizador",
+            "english":"Stun spore"
+        },
+        "desc":{
+            "spanish":"El usuario esparce una espesa nube de polvo que paraliza a su oponente",
+            "english":"The user scatters a cloud of numbing powder that paralyzes the target."
+        }
+    },
+    "effect":"stun_opponent",
+    "pp":30
+}

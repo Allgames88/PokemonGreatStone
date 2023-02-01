@@ -1,0 +1,25 @@
+{
+    "content":[
+        {   
+            "ID":"Fishfest",
+            "percentage":7,
+            "minlevel":1,
+            "maxlevel":4,
+            "ammount":1
+        },
+        {   
+            "ID":"Parasect",
+            "percentage":7,
+            "minlevel":1,
+            "maxlevel":6,
+            "ammount":2
+        },
+        {   
+            "ID":"MissingNo",
+            "percentage":1,
+            "minlevel":1,
+            "maxlevel":100
+        }
+    ],
+    "NumOfFights":4
+}
