@@ -28,7 +28,7 @@ public class GuiListener : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pokemonListener = GameObject.Find("MyPoke");
+        pokemonListener = GameObject.Find("MyPoke").GetComponent<PokemonListener>();
         poke = pokemonListener.pokemon;
         
         general=GameObject.Find("GameManajer").GetComponent<GeneralData>();
