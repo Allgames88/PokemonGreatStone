@@ -31,6 +31,7 @@ public class Player_Movement : MonoBehaviour
             canMove = true;
             general = GameObject.Find("GameManajer").GetComponent<GeneralData>();
             character = general.actualChar;
+            general.camera = "walk";
         //----------------------- --------------- ------------------
 
         //We get the obstacles layer;

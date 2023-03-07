@@ -1,0 +1,10 @@
+{
+    "name":"Test sign",
+    "content":[
+        {"list":["There is something written on this sign..."]},
+        {"list":["Press the right button to read this sign."]},
+        {"list":["You just read what was written in this sign."]},
+        {"list":["You relax knowing what it says on this sign."]},
+        {"list":["You will never know what is written in here.","Unless...."]}
+    ]
+}

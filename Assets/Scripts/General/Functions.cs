@@ -68,16 +68,8 @@ public class Functions : MonoBehaviour
     //Function used to try to run.
     //It will detect if player is on a fight, or if its not.
     public static void RunFromFight(){
-        GameObject player = GameObject.Find("Character");
-        List<GameObject> opponents = player.GetComponent<Player_combat_detector>().opponents;
-        List<GameObject> wild_particles = player.GetComponent<Player_combat_detector>().wild_particles;
-        foreach (GameObject item in opponents)
-        {
-            Destroy(item);
-        }
-        opponents.Clear();
-        wild_particles.Clear();
-        player.SendMessage("FinishCombatCamera");
+        GameObject combatManager = GameObject.Find("BattleManager");
+        combatManager.SendMessage("FinishCombatCamera","flee");
         Debug.Log("Niguerundaio Polnarefuuuuu");
     }
 
@@ -113,7 +105,7 @@ public class Functions : MonoBehaviour
         
 
         if(pokemon.pokeball == null){
-            pokemon.pokeball = "common";
+            pokemon.pokeball = "pokeball";
         }
 
         //ASSIGN THE TEXTURES:
@@ -138,7 +130,7 @@ public class Functions : MonoBehaviour
             //Make a new color
             Color32 color = someObject.GetComponent<SpriteRenderer>().color;
             someObject.GetComponent<SpriteRenderer>().color = color;
-            yield return new WaitForSeconds(1);
+            //yield return new WaitForSeconds(1);
             //Repeat until the object has its normal color.
             while (color.r < 255){
                 yield return new WaitForSeconds(0.0001f);
@@ -219,9 +211,9 @@ public class Functions : MonoBehaviour
     }
 
 
-    //Function used to find an anmation in an animator.
+    //Function used to find an anmation in an animator. Works properly.
     public static AnimationClip FindAnimation (Animator animator, string name) {
-   
+        //For each animationclip in the animator, if the name of the clip is the same as the name searched, return the animation clip, else, reutn null.
         foreach (AnimationClip clip in animator.runtimeAnimatorController.animationClips)
         {
             if (clip.name == name){
@@ -250,7 +242,7 @@ public class Functions : MonoBehaviour
                     //Loads the texture.
                     texture.LoadImage(fileData);
                     //Info log.
-                    Debug.Log("Ancho de textura: "+texture.width+", Alto de textura: "+texture.height+", FilterMode: " + texture.filterMode);
+                    //Debug.Log("Ancho de textura: "+texture.width+", Alto de textura: "+texture.height+", FilterMode: " + texture.filterMode);
                     //Makes a new sprite, with the dimensions of the textures, and adds it to the opponent.
                     Rect rect = new Rect(0, 0, texture.width, texture.height);
                     return Sprite.Create(texture,rect, new Vector2(0.5f, 0.5f));
@@ -288,7 +280,7 @@ public class Functions : MonoBehaviour
         if(pokeObject.GetComponent<SpriteRenderer>() != null){
             //Make a new color
             Color32 color = pokeObject.GetComponent<SpriteRenderer>().color;
-            Color32 red = new Color32(255,0,0,255);
+            Color32 red = new Color32(180,0,0,255);
             Vector3 size = new Vector3(0,0,0);
             Vector3 orSize = pokeObject.transform.localScale;
             pokeObject.transform.localScale = size;
@@ -308,15 +300,15 @@ public class Functions : MonoBehaviour
             //Repeat until the object has its normal color.
             while (red.b < 255){
                 if(red.r <= 251){
-                    int newColor = red.r+4;
+                    int newColor = red.r+1;
                     red.r = (byte)newColor;
                 }
                 if(red.b <= 251){
-                    int newColor = red.b+4;
+                    int newColor = red.b+2;
                     red.b = (byte)newColor;
                 }
                 if(red.g <= 251){
-                    int newColor = red.g+4;
+                    int newColor = red.g+2;
                     red.g = (byte)newColor;
                 }
                 if(red.b >= 252){
@@ -358,6 +350,42 @@ public class Functions : MonoBehaviour
             //throwable.transform.position = end;
         }else{
             Debug.LogError("'time' parameter has to be higher than 0.");
+        }
+    }
+
+    //Function used to get A SINGLE string, depending on the traduction.
+    //jsonPath, the relative path from Json/Dialog/, from the streamingAssets.
+    public static string getTraduction(string jsonPath, string? option){
+        string res;
+        GeneralData general = GameObject.Find("GameManajer").GetComponent<GeneralData>();
+        jsonPath = (Application.streamingAssetsPath + "/Json/Dialog/" + general.lang + "/"+ jsonPath);
+        dialog dial = new dialog();
+        JsonUtility.FromJsonOverwrite(File.ReadAllText(jsonPath),dial);
+        if(dial != null){
+            if(option != null && option == "random"){
+                int random = Random.Range(0, dial.content.Count );
+                Debug.Log("El texto aleatorio elejido  entre 0 y "+ dial.content.Count +" es el número " + random);
+                res = dial.content[random].list[0];
+            }else{
+                res = dial.content[0].list[0];
+            }
+            return res;
+            
+        }else{
+            return "Traduction not Found";
+        }
+    }
+
+    //Function used to get A WHOLE DIALOG, depending on the traduction.
+    public static dialog getDialog(string jsonPath){
+        GeneralData general = GameObject.Find("GameManajer").GetComponent<GeneralData>();
+        jsonPath = (Application.streamingAssetsPath + "/Json/Dialog/" + general.lang + "/"+ jsonPath);
+        dialog dial = new dialog();
+        JsonUtility.FromJsonOverwrite(File.ReadAllText(jsonPath),dial);
+        if(dial != null){
+            return dial;
+        }else{
+            return null;
         }
     }
 

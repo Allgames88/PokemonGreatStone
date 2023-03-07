@@ -1,0 +1,7 @@
+{
+    "name":"I Choose you",
+    "content":[
+        {"list":["Adelante, %pkm%!"]},
+        {"list":["%pkm%, te elijo a ti!"]}
+    ]
+}

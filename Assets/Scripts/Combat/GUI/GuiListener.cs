@@ -18,15 +18,18 @@ public class GuiListener : MonoBehaviour
     public Sprite gray_button;
     public Sprite blank_button;
     public int moveCount;
-    public Pokemon poke;
+    PokemonListener pokemonListener;
     public GeneralData general;
     private int colorcent;
+    Pokemon poke;
 
  
 
     // Start is called before the first frame update
     void Start()
     {
+        pokemonListener = GameObject.Find("MyPoke");
+        poke = pokemonListener.pokemon;
         
         general=GameObject.Find("GameManajer").GetComponent<GeneralData>();
         Hide();
@@ -36,13 +39,15 @@ public class GuiListener : MonoBehaviour
             buttons.Add(Functions.FindSpecificChild(gameObject, "Pokemon Button"));
             buttons.Add(Functions.FindSpecificChild(gameObject, "Run Button"));
             buttons.Add(Functions.FindSpecificChild(gameObject, "Cancel Button"));
+            
+
         }
     }
 
     void Update()
     {
         
-        poke=GameObject.Find("MyPoke").GetComponent<PokemonListener>().pokemon;
+        
         if(movesState == 0){
             
             colorcent=0;

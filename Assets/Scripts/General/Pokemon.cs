@@ -22,7 +22,7 @@ public class Pokemon
     public Stats stats;
     //The moves that the pokemon can have.
     public MoveCondition[] movePool;
-   
+
 
         //Stats of an already built pokemon.
         public builtStats builtStats;
@@ -64,5 +64,6 @@ public class builtStats{
 public class MoveCondition{
     public string move;
     public string type;
-    public int level; 
+    public int level;
+    public bool egg;
 }

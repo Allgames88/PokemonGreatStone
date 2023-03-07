@@ -21,8 +21,6 @@ using System.IO;
         public int maxlevel;
         public int minlevel;
         public int level;
-        public int ammount;
-        
     }
 
 /*
@@ -113,17 +111,8 @@ public class GrassManager : MonoBehaviour /* ======= Main Class =======*/
                             //If the Grass its been chosen to have a pokemon, an ID, and a Level will be added to the Grass
                             if(a <= wildPokemon.percentage ){
                                 child.gameObject.GetComponent<SingleGrass>().ID.Clear();
-                                //If the player finds multiple pokemon in the same grass, me make a for and add all IDs to the list.
-                                //If not
                                 //Just add an ID.
-                                if (wildPokemon.ammount != 0){
-                                    for(var x = 0; x < wildPokemon.ammount; x++){
-                                        child.gameObject.GetComponent<SingleGrass>().ID.Add(wildPokemon.ID);
-                                    }
-                                }else{
-                                    Debug.Log("Just added one");
                                     child.gameObject.GetComponent<SingleGrass>().ID.Add(wildPokemon.ID);
-                                }
                                 
                                 child.gameObject.GetComponent<SingleGrass>().level = Random.Range(wildPokemon.maxlevel, wildPokemon.minlevel);
                                 child.gameObject.GetComponent<SingleGrass>().round = round;
@@ -135,7 +124,7 @@ public class GrassManager : MonoBehaviour /* ======= Main Class =======*/
             }
 
             //=========================   Debugs   =========================================
-            Debug.Log(group.content[0]);
+            //Debug.Log(group.content[0]);
 
             //==============================================================================
         }

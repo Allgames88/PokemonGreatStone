@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class defNPC : MonoBehaviour
-{
-    /*
+
+/*
     ====================   Class Declarations   =======================================
     */
     [System.Serializable]
@@ -24,7 +23,11 @@ public class defNPC : MonoBehaviour
 
     /*
     ================================================================================
-    */
+*/
+
+public class defNPC : MonoBehaviour
+{
+    
 
 
 
@@ -35,6 +38,7 @@ public class defNPC : MonoBehaviour
     public string jsonPath;
     public int count;
     public GameObject player;
+    public GeneralData general;
 
 
      //We make an object where store the data from the dialog json.
@@ -43,6 +47,7 @@ public class defNPC : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         //IMPORTANT: Get the player.
         player = GameObject.Find("Character");
 
@@ -59,12 +64,10 @@ public class defNPC : MonoBehaviour
         transform.localPosition = grid.GetCellCenterLocal(cellPosition);
         transform.position = new Vector2(transform.position.x, transform.position.y);
 
-        //We get the path of the json dialog file.
-        jsonPath =  Application.streamingAssetsPath + jsonPath;
         //Count starts as 0.
         count = 0;
         //We store it in the object;
-        JsonUtility.FromJsonOverwrite(File.ReadAllText(jsonPath),dial);
+        dial = Functions.getDialog(jsonPath);
 
 
 

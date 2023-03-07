@@ -128,21 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2021940280821523304, guid: a628aaea270355743a3c354265b93c96, type: 3}
   m_PrefabInstance: {fileID: 1097783110}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1022971697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1022971696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dae9d34d6f2106844bfa990ace7cd589, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combat_iniciated: 0
-  playerInGame: []
-  opponentInGame: []
 --- !u!114 &1022971699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +150,10 @@ PrefabInstance:
     - target: {fileID: 2021940280821523304, guid: a628aaea270355743a3c354265b93c96, type: 3}
       propertyPath: m_Name
       value: GameManajer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2021940280821523305, guid: a628aaea270355743a3c354265b93c96, type: 3}
+      propertyPath: lang
+      value: spanish
       objectReference: {fileID: 0}
     - target: {fileID: 2021940280821523305, guid: a628aaea270355743a3c354265b93c96, type: 3}
       propertyPath: monPrefab

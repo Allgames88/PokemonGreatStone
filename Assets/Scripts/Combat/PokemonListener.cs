@@ -16,12 +16,14 @@ public class PokemonListener : MonoBehaviour
     public Slider psBar;
     public float diff;
     public bool AnimationPlayed;
-    public bool hasAtacked;
+
 
     
     //Variables used to administrate the turns and the combat.
     public bool playerOwned;
     public bool decided;
+    public bool hasAtacked;
+    public Movement action;
 
     // Update is called once per frame
     void Update()
@@ -29,6 +31,7 @@ public class PokemonListener : MonoBehaviour
         
         //Stat assignment, and var control.
         if(pokemon != null && pokemon.ID != null && pokemon.ID != ""){
+            gameObject.GetComponent<SpriteRenderer>().enabled=true;
             //Changes the opponent pokemon display, to show its name.
             if(Name != null){
                 Name.text = pokemon.Name;
@@ -66,7 +69,6 @@ public class PokemonListener : MonoBehaviour
                     
                 }else if(psBar.value < pokemon.builtStats.actualPS){
                     //Get the difference between the bar value and pokemon's HP, that value will be added to the bar in the amount of time we specify, one second with no specification.
-                    Debug.Log(diff);
                     if(diff > 0){
                         psBar.value = psBar.value + diff*Time.deltaTime;
                     }else if(diff < 0){
@@ -87,27 +89,32 @@ public class PokemonListener : MonoBehaviour
 
         //Setting the texture.
         /*---- Assigning the Texture to the Pokemon ----*/
-        if(!playerOwned){
+        if(!playerOwned && pokemon != null){
             //IF the pokemon's static animation exists, play it.
             if(Functions.FindAnimation(GetComponent<Animator>(),pokemon.ID.ToLower()+"_static") != null && !AnimationPlayed){
+                Debug.Log("Animation playing");
+                Debug.Log(Functions.FindAnimation(GetComponent<Animator>(),pokemon.ID.ToLower()+"_static"));
                 gameObject.GetComponent<Animator>().enabled=true;
                 gameObject.GetComponent<Animator>().Play(pokemon.ID.ToLower()+"_static", 0, 1f);
                 AnimationPlayed = true;
             //However, if it not exists, then just display the sprite.
-            }else if(pokemon.sprite != null){
+            }else if(pokemon.sprite != null && !AnimationPlayed){
+                Debug.Log("Animation not playing");
+                gameObject.GetComponent<Animator>().enabled=false;
                 gameObject.GetComponent<SpriteRenderer>().sprite = pokemon.sprite;
+                AnimationPlayed = true;
             }
-        }else{
+        }else if(pokemon != null){
             //IF the pokemon's static animation exists, play it.
             if(Functions.FindAnimation(GetComponent<Animator>(),pokemon.ID.ToLower()+"_my_static") != null && !AnimationPlayed){
                 gameObject.GetComponent<Animator>().enabled=true;
                 gameObject.GetComponent<Animator>().Play(pokemon.ID.ToLower()+"_my_static", 0, 1f);
                 AnimationPlayed = true;
             //However, if it not exists, then just display the sprite.
-            }else if(pokemon.Mysprite != null){
+            }else if(pokemon.Mysprite != null && !AnimationPlayed){
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
                 gameObject.GetComponent<SpriteRenderer>().sprite = pokemon.Mysprite;
-            }else{
-                gameObject.GetComponent<SpriteRenderer>().sprite = null;
+                AnimationPlayed = true;
             }
         }
             
@@ -121,6 +128,7 @@ public class PokemonListener : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().color = new Color32(0,0,0,255);
         }
         gameObject.GetComponent<Animator>().enabled=false;
+        gameObject.GetComponent<SpriteRenderer>().enabled=true;
         AnimationPlayed = false;
     }
 
@@ -128,5 +136,7 @@ public class PokemonListener : MonoBehaviour
     public void End(){
         pokemon.sprite = null;
         gameObject.GetComponent<Animator>().enabled=false;
+        AnimationPlayed = false;
+        pokemon = null;
     }
 }

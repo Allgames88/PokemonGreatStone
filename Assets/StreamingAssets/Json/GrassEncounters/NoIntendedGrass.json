@@ -4,15 +4,13 @@
             "ID":"Fishfest",
             "percentage":7,
             "minlevel":1,
-            "maxlevel":4,
-            "ammount":1
+            "maxlevel":4
         },
         {   
             "ID":"Parasect",
             "percentage":7,
             "minlevel":1,
-            "maxlevel":6,
-            "ammount":2
+            "maxlevel":6
         },
         {   
             "ID":"MissingNo",

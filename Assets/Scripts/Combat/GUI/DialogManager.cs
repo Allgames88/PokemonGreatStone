@@ -56,7 +56,6 @@ public class DialogManager : MonoBehaviour
         if(dialog != null){
             //If the dialogBox is active, and if there is no more text to show, we are going to close it, and allow player to move.
             if(DialogBox.activeSelf){
-                Debug.Log("Cerrar");
                 //If the dialog hasnt finished speaking, we will put the whole text on display.
                 if(dialog.text != Lista[count-1]){
                     CoroutineWork = false;
@@ -89,7 +88,6 @@ public class DialogManager : MonoBehaviour
             }else{
                 //If there is something to say.
                 if(Lista.Count != 0){
-                    Debug.Log("Abrir");
                     //Activate the DialogBox
                     DialogBox.SetActive(true);
                     //We tell the player that a conversation has started.
@@ -112,7 +110,6 @@ public class DialogManager : MonoBehaviour
         }else if(TMPdialog != null){
             //If the dialogBox is active, and if there is no more text to show, we are going to close it, and allow player to move.
             if(DialogBox.activeSelf){
-                Debug.Log("Cerrar");
                 //If the dialog hasnt finished speaking, we will put the whole text on display.
                 if(TMPdialog.text != Lista[count-1]){
                     CoroutineWork = false;
@@ -145,7 +142,6 @@ public class DialogManager : MonoBehaviour
             }else{
                 //If there is something to say.
                 if(Lista.Count != 0){
-                    Debug.Log("Abrir");
                     //Activate the DialogBox
                     DialogBox.SetActive(true);
                     //We tell the player that a conversation has started.

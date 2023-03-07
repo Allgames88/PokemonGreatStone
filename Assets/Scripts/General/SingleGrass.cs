@@ -71,10 +71,10 @@ public class SingleGrass : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other) {
         //When character collides with this grass, then we will log the pokemon inside.
         if(other.gameObject.name == "Character"){
-            if(ID[0] != "" && ID[0] != null){
+            if(ID.Count > 0){
                 //This will be used for detecting future events.
                 teamMessage data = new teamMessage();
-                data.IDs = ID;
+                data.ID = ID[0];
                 data.level = level;
                 player.SendMessage("InitFight", data, SendMessageOptions.DontRequireReceiver);
                 ID.Clear();
@@ -86,7 +86,13 @@ public class SingleGrass : MonoBehaviour
 
 }
 
+//Sent to the manager to administrate and build full combats, wild or not.
 public class teamMessage{
+    public bool doubleCombat;
+    public character opponentA;
+    public character opponentB;
+    public string ID;
+    public bool isTrainer;
     public List<string> IDs;
     public int level;
 }

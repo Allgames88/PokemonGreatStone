@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GeneralData : MonoBehaviour
 {
+    public string camera;
     public float playerSpeed = 0.7f;
     public float playerSpeedRunning = 1.5f;
     public KeyCode actionKey = KeyCode.Z;
@@ -15,7 +16,7 @@ public class GeneralData : MonoBehaviour
     public bool Debuging;
     public character[] characterPool;
     public character actualChar;
-    public string lang = "spanish";
+    public string lang = "english";
 
     public GameObject monPrefab;
     public GameObject wildParticle;
