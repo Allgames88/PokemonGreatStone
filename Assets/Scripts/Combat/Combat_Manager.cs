@@ -177,13 +177,15 @@ public class Combat_Manager : MonoBehaviour
             //Do the pokeball work.
             Animator ballAnim = ball.GetComponent<Animator>();
             ball.GetComponent<SpriteRenderer>().enabled = true;
+            ballAnim.speed = 1.5f;
             ballAnim.Play(poke.pokeball + "_throw");
             //Throw the pokeball, and wait a second, cuz' its the same time 
             StartCoroutine(Functions.ParabolicThrow(ball, myPoke.transform.position, 0.6f));
             yield return new WaitForSeconds(1f);
-            ballAnim.speed = 1.5f;
+            
             ballAnim.Play(poke.pokeball + "_open");
             yield return new WaitForSeconds(0.8f);
+            
             ballAnim.speed = 1f;
             //Animate some spinning particles or whatever...
             //yield return new WaitForSeconds(0.3f);
@@ -201,6 +203,7 @@ public class Combat_Manager : MonoBehaviour
             myPoke.pokemon = poke;
             StartCoroutine(Functions.TrainerReveal(myPoke.transform.gameObject));
         yield return new WaitForSeconds(0.8f);
+            ball.GetComponent<SpriteRenderer>().enabled = false;
             CombatGUI.SendMessage("Reveal",SendMessageOptions.DontRequireReceiver);
             oppCombatGUI.SendMessage("Reveal",SendMessageOptions.DontRequireReceiver);
 

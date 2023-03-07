@@ -12,16 +12,12 @@ public class GuiListener : MonoBehaviour
     public int movesState = 0;
     public GameObject children;
     public List<GameObject> buttons;
-    public Sprite red_button;
-    public Sprite blue_button;
-    public Sprite poke_button;
-    public Sprite gray_button;
-    public Sprite blank_button;
+    public List<GameObject> battleButtons;
     public int moveCount;
     PokemonListener pokemonListener;
     public GeneralData general;
-    private int colorcent;
     Pokemon poke;
+    public GameObject prefab;
 
  
 
@@ -50,7 +46,15 @@ public class GuiListener : MonoBehaviour
         
         if(movesState == 0){
             
-            colorcent=0;
+            //We are about to change all of this so... dont know, there is goind to be lots of errors...
+            /*
+                First, i need the prefab of a combat button, text, pp, and personal class... It will also
+                have the script Button_as_children, so when the player presses the button, it will send a message here, and from here to the combatManager.
+
+                When moveState is 1, hide the normal buttons, and display the combat ones, its easier than what i did.
+
+                I might need to do a new script, the moveButton_listener, so the button changes depending on the movement it has inside...
+            */
 
             foreach(GameObject gam in buttons){
                 moveCount=0;
@@ -61,32 +65,10 @@ public class GuiListener : MonoBehaviour
                 GameObject ppObject = Functions.FindSpecificChild(gam, "pps");
                 TextMeshPro tmp = textObject.GetComponent<TextMeshPro>();
                 ButtonAsChildren bac = gam.GetComponent<ButtonAsChildren>();
-                //If the button is the Atack button, set its sprite and text.
-                if(gam.name == "Atack Button" && gam.GetComponent<SpriteRenderer>().sprite != red_button){
-                    spr.sprite = red_button;
-                    bac.action = "MovementMenu";
-                    tmp.SetText("Fight");
-                    spr.color = newColor;
-                }else if(gam.name == "Item Button" && gam.GetComponent<SpriteRenderer>().sprite != blue_button){
-                    spr.sprite = blue_button;
-                    bac.action = "OpenItems";
-                    tmp.SetText("Items");
-                    spr.color = newColor;
-                }else if(gam.name == "Pokemon Button" && gam.GetComponent<SpriteRenderer>().sprite != poke_button){
-                    spr.sprite = poke_button;
-                    bac.action = "OpenPokemonMenu";
-                    tmp.SetText("Pokemon");
-                    spr.color =newColor;
-                }else if(gam.name == "Run Button" && gam.GetComponent<SpriteRenderer>().sprite != gray_button){
-                    spr.sprite = gray_button;
-                    bac.action = "RunFromFight";
-                    tmp.SetText("Run");
-                    spr.color = newColor;
-                }else if(gam.name == "Cancel Button" && ppObject == null){
+                if(gam.name == "Cancel Button" && ppObject == null){
                     bac.action = "MovementMenu";
                     tmp.SetText("");
                     gam.SetActive(false);
-                    spr.color = bac.orColor;
                 }
                 if(gam.name != "Cancel Button"){
                     ppObject.SetActive(false);
@@ -112,79 +94,6 @@ public class GuiListener : MonoBehaviour
                     TextMeshPro tmp = textObject.GetComponent<TextMeshPro>();
                     ButtonAsChildren bac = gam.GetComponent<ButtonAsChildren>();
 
-                    if(poke.builtStats.moves[moveCount] != null){
-                        Color32 newColor = new Color32();
-                        if(poke.builtStats.moves[moveCount].type == "Poison"){
-                            newColor = new Color32(204,0,204,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Bug"){
-                            newColor = new Color32(153,255,51,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Grass"){
-                            newColor = new Color32(51,255,51,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Normal"){
-                            newColor = new Color32(255,255,255,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Psiquic"){
-                            newColor = new Color32(255,51,153,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Fire"){
-                            newColor = new Color32(255,51,51,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Water"){
-                            newColor = new Color32(51,153,255,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Electric"){
-                            newColor = new Color32(255,255,51,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Ghost"){
-                            newColor = new Color32(102,0,102,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Dark"){
-                            newColor = new Color32(67,53,43,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Fighting"){
-                            newColor = new Color32(200,55,16,255);
-                        }
-                        if(poke.builtStats.moves[moveCount].type == "Fairy"){
-                            newColor = new Color32(255,55,255,255);
-                        }
-                    
-                        
-                        if(gam.name == "Cancel Button"){
-                            bac.action = "MovementMenu";
-                            tmp.SetText("");
-                            gam.SetActive(true);
-                        }else{
-                            spr.sprite = blank_button;
-                            ppObject.SetActive(true);
-                            if(poke.builtStats.moves[moveCount] != null){
-                                if(general.lang == "spanish"){
-                                    tmp.SetText(poke.builtStats.moves[moveCount].traduction.name.spanish);
-                                }else if (general.lang == "spanish"){
-                                    tmp.SetText(poke.builtStats.moves[moveCount].traduction.name.english);
-                                }else{
-                                    tmp.SetText("--");
-                                }
-
-                                PPtmp.SetText(poke.builtStats.moves[moveCount].actualPP + "/" + poke.builtStats.moves[moveCount].pp);
-                                if(colorcent == 0){
-                                    spr.color = newColor;
-                                }
-                                bac.orColor=newColor;
-                                
-                            }else{
-                                tmp.SetText("--");
-                            }
-                            bac.action = "OpenItems";
-                        }
-                    }else{
-
-                        spr.sprite = blank_button;
-                        tmp.SetText("--");
-                        bac.action = "OpenItems";
-                    }
                 }
                 catch (Exception e){
                     if(gam.name == "Cancel Button"){
@@ -205,7 +114,7 @@ public class GuiListener : MonoBehaviour
                 
             }
             moveCount=0;
-            colorcent++;
+
 
         }
     }

@@ -2912,9 +2912,24 @@ MonoBehaviour:
   psBar: {fileID: 815927295}
   diff: 0
   AnimationPlayed: 0
-  hasAtacked: 0
   playerOwned: 1
   decided: 0
+  hasAtacked: 0
+  action:
+    type: 
+    power: 0
+    accuracy: 0
+    cat: 
+    traduction:
+      name:
+        spanish: 
+        english: 
+      desc:
+        spanish: 
+        english: 
+    effect: 
+    pp: 0
+    actualPP: 0
 --- !u!95 &313824970
 Animator:
   serializedVersion: 3
@@ -11477,88 +11492,10 @@ MonoBehaviour:
   movesState: 0
   children: {fileID: 0}
   buttons: []
-  red_button: {fileID: 21300000, guid: b5cc982fe122f4a4d81d164e88365a46, type: 3}
-  blue_button: {fileID: 21300000, guid: da522ac296243734ead5a2056663d9b3, type: 3}
-  poke_button: {fileID: 21300000, guid: 764df8dd5212a6444be21dbe1e07f0b4, type: 3}
-  gray_button: {fileID: 21300000, guid: 40c66519cdcc27a47a01d7d85bea735f, type: 3}
-  blank_button: {fileID: 21300000, guid: 8a0323e6d3b4b8840995cb95ba3d57bd, type: 3}
+  battleButtons: []
   moveCount: 0
-  poke:
-    opScale:
-      x: 0
-      y: 0
-    ID: 
-    texture: 
-    Mytexture: 
-    Name: 
-    Level: 0
-    stats:
-      PS: 0
-    movePool: []
-    builtStats:
-      PS: 0
-      actualPS: 0
-      moves:
-      - type: 
-        power: 0
-        accuracy: 0
-        cat: 
-        traduction:
-          name:
-            spanish: 
-            english: 
-          desc:
-            spanish: 
-            english: 
-        effect: 
-        pp: 0
-        actualPP: 0
-      - type: 
-        power: 0
-        accuracy: 0
-        cat: 
-        traduction:
-          name:
-            spanish: 
-            english: 
-          desc:
-            spanish: 
-            english: 
-        effect: 
-        pp: 0
-        actualPP: 0
-      - type: 
-        power: 0
-        accuracy: 0
-        cat: 
-        traduction:
-          name:
-            spanish: 
-            english: 
-          desc:
-            spanish: 
-            english: 
-        effect: 
-        pp: 0
-        actualPP: 0
-      - type: 
-        power: 0
-        accuracy: 0
-        cat: 
-        traduction:
-          name:
-            spanish: 
-            english: 
-          desc:
-            spanish: 
-            english: 
-        effect: 
-        pp: 0
-        actualPP: 0
-    sprite: {fileID: 0}
-    Mysprite: {fileID: 0}
-    pokeball: 
   general: {fileID: 0}
+  prefab: {fileID: 5460825719838164111, guid: c2b9bb3733aa13848b1ac29b26d94623, type: 3}
 --- !u!212 &1286494895
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12287,7 +12224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452336980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.79, y: 0.37, z: -1.3598}
+  m_LocalPosition: {x: -0.88, y: 0.46, z: -1.3598}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.70770085}
   m_Children: []
   m_Father: {fileID: 1859262021}
@@ -27437,6 +27374,7 @@ MonoBehaviour:
   myBallPos: {x: 0, y: 0, z: 0}
   positionedTop: 0
   darkOutCalled: 0
+  canBattle: 0
 --- !u!1001 &2895929989655524368
 PrefabInstance:
   m_ObjectHideFlags: 0
