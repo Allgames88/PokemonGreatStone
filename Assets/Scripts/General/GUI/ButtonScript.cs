@@ -2,34 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonAsChildren : MonoBehaviour
+public class ButtonScript : MonoBehaviour
 {
-    public GameObject parent;
+    public GameObject reciever;
     public string action;
     Vector3 mousePosition;
     public Color32 orColor;
     public string paramOne;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        //Get The parent.
-        parent = transform.parent.gameObject;
-        
-    }
-
-    // Update is called once per frame
-    /*void Update()
-    {
-       
-    }*/
 
     private void OnMouseDown() {
         //If clicked and well configured, tell the father to exeute an specified function.
-        if(parent != null && parent && action != null && action != ""){
+        if(reciever != null && reciever && action != null && action != ""){
             Color32 white = new Color32(255,255,255,255);
             gameObject.GetComponent<SpriteRenderer>().color = white;
-            parent.SendMessage(action);
+            reciever.SendMessage(action);
         } 
     }
 

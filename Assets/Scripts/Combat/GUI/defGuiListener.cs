@@ -33,8 +33,9 @@ public class defGuiListener : MonoBehaviour
 
     //Function to reveal the combat opponent GUI.
     public void Reveal(){
+        StopAllCoroutines();
         StartCoroutine(actualReveal());
-        StartCoroutine(stopAll());
+
     }
 
     //X: -6.7f
@@ -59,9 +60,8 @@ public class defGuiListener : MonoBehaviour
 
     //Function to hide the combat GUI.
     public void Hide(){
+        StopAllCoroutines();
         StartCoroutine(actualHide());
-        StartCoroutine(stopAll());
-        
     }
 
     //X: -10.8f Y: 1.2f

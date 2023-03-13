@@ -28,9 +28,17 @@ public class PokemonListener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         
+
         //Stat assignment, and var control.
         if(pokemon != null && pokemon.ID != null && pokemon.ID != ""){
+
+                //Just, assign a number to each movement, well, i might not need it.
+                for (int i = 0; i < pokemon.builtStats.moves.Count; i++){
+                    pokemon.builtStats.moves[i].order = i;
+                }
+
             gameObject.GetComponent<SpriteRenderer>().enabled=true;
             //Changes the opponent pokemon display, to show its name.
             if(Name != null){
@@ -89,7 +97,7 @@ public class PokemonListener : MonoBehaviour
 
         //Setting the texture.
         /*---- Assigning the Texture to the Pokemon ----*/
-        if(!playerOwned && pokemon != null){
+        if(!playerOwned && pokemon != null && pokemon.ID != ""){
             //IF the pokemon's static animation exists, play it.
             if(Functions.FindAnimation(GetComponent<Animator>(),pokemon.ID.ToLower()+"_static") != null && !AnimationPlayed){
                 Debug.Log("Animation playing");

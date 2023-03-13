@@ -73,7 +73,7 @@ public class DialogManager : MonoBehaviour
                     //If there is text to show, get back up and show it.
                     }else{
                         //Show the action key
-                        NextUI.text = ("Press \"" + general.actionKey.ToString() + "\" to continue.");
+                        NextUI.text = ("Press [ " + general.actionKey.ToString() + " ] to continue.");
                         //Empty the dialog
                         dialog.text = "";
                         //Stop any working coroutine
@@ -97,7 +97,7 @@ public class DialogManager : MonoBehaviour
                     //Set the count to 0
                     count = 0;
                     //Tell the player which action key its using.
-                    NextUI.text = ("Press \"" + general.actionKey.ToString() + "\" to continue.");
+                    NextUI.text = ("Press [ " + general.actionKey.ToString() + " ] to continue.");
                     //We close the SlowlyShowText coroutine if its active.
                     CoroutineWork = false;
                     //Show the text.
@@ -127,7 +127,7 @@ public class DialogManager : MonoBehaviour
                     //If there is text to show, get back up and show it.
                     }else{
                         //Show the action key
-                        TMPNextUI.text = ("Press \"" + general.actionKey.ToString() + "\" to continue.");
+                        TMPNextUI.text = ("Press [ " + general.actionKey.ToString() + " ] to continue.");
                         //Empty the dialog
                         TMPdialog.text = "";
                         //Stop any working coroutine
@@ -151,7 +151,7 @@ public class DialogManager : MonoBehaviour
                     //Set the count to 0
                     count = 0;
                     //Tell the player which action key its using.
-                    TMPNextUI.text = ("Press \"" + general.actionKey.ToString() + "\" to continue.");
+                    TMPNextUI.text = ("Press [ " + general.actionKey.ToString() + " ] to continue.");
                     //We close the SlowlyShowText coroutine if its active.
                     CoroutineWork = false;
                     //Show the text.

@@ -56,7 +56,7 @@ public class builtStats{
     public int actualPS;
     
     //The moves that the pokemon has;
-    public Movement[] moves = {null,null,null,null};
+    public List<Movement> moves = new List<Movement>();
 }
 
 //This class just stores scales.

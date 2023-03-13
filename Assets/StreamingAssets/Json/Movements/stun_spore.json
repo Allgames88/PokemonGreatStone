@@ -1,6 +1,6 @@
 {
     "type":"Grass",
-    "power":null,
+    "power":0,
     "accuracy":75,
     "cat":"effect",
     "traduction":{

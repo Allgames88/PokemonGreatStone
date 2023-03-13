@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4e50e36510da51948891302c5865dcb0
+guid: ff7ce3155664a834791499bc50536b79
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6098756919207099882
-    second: movement_button_0
+      213: 7409199646318596496
+    second: movement_button_overlay_2_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: movement_button_0
+      name: movement_button_overlay_2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -120,8 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aed7bccfa1323a450800000000000000
-      internalID: 6098756919207099882
+      spriteID: 09115cc92d3c2d660800000000000000
+      internalID: 7409199646318596496
       vertices: []
       indices: 
       edges: []

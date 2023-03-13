@@ -5,6 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class Movement
 {   
+    //This is just to get things ordered in the array, for example, we tell the pokemon we want to use this move,
+    //then we tell him, use the move with the order x.
+    public int? order;
     //The movement's type.
     public string type;
     //The movement's power.
@@ -38,4 +41,20 @@ public class Languaje{
    //The movement's traduction, its supposed to change depending on the player's languaje.
    public string spanish;
    public string english;
+}
+
+[System.Serializable]
+public class typeList{
+    public List<typeData> list;
+}
+
+[System.Serializable]
+public class typeData{
+    //The data inside of a type, for example, its colors and the doubles.
+    public List<int> color;
+    public List<int> colorB;
+    public string name;
+    public List<string> doubleTo;
+    public List<string> halfTo;
+    public List<string> inmuneTo;
 }

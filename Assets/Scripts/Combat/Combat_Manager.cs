@@ -40,11 +40,18 @@ public class Combat_Manager : MonoBehaviour
         //So, if the turn is 0, run a Coroutine that makes the reveal of the pokemons, both player and opponent.
         if(turn == 0){
             StartCoroutine("revelationTurn");
+        }else{
+            if(myPoke.action.order != null && oppPoke.action.order != null){
+                StopAllCoroutines();
+                StartCoroutine("NormalCombatTurn");
+            }
+
+            if(myPoke.action.order != null && oppPoke.action.order == null){
+                StopAllCoroutines();
+                StartCoroutine("OpponentDecition");
+            }
         }
 
-        if(myPoke.decided && oppPoke.decided){
-            StartCoroutine(CombatTurn());
-        }
 
 
     }
@@ -66,6 +73,7 @@ public class Combat_Manager : MonoBehaviour
 
     }
 
+    
     IEnumerator revelationTurn(){
         turn++;
         Debug.Log("Times done");
@@ -158,14 +166,14 @@ public class Combat_Manager : MonoBehaviour
                 then the rest of the code can continue.
             
             */
-
+ 
             //Start player's animation
             GameObject character = GameObject.Find("player's character");
             GameObject ball = GameObject.Find("myBall");
             character.GetComponent<Animator>().enabled = true;
             character.GetComponent<Animator>().Rebind();
-            
-
+             
+ 
             //wait until animation plays at 75%
             //Yes, i did it, it was hard man.
             AnimationClip clip = Functions.FindAnimation(character.GetComponent<Animator>(), "Throw");
@@ -173,7 +181,7 @@ public class Combat_Manager : MonoBehaviour
             float animLengh = clip.length * 0.70f;
             yield return new WaitForSeconds(animLengh);
             character.SendMessage("Hide",SendMessageOptions.DontRequireReceiver);
-
+ 
             //Do the pokeball work.
             Animator ballAnim = ball.GetComponent<Animator>();
             ball.GetComponent<SpriteRenderer>().enabled = true;
@@ -193,12 +201,12 @@ public class Combat_Manager : MonoBehaviour
             /*
             -------------------------------------------------------------------------------------------
             */
-
-
-
+ 
+ 
+ 
             //wait a second, this one will be erased.
                 //yield return new WaitForSeconds(1);
-
+ 
             //Trainer reveal, from red an tiny, to big and normal.
             myPoke.pokemon = poke;
             StartCoroutine(Functions.TrainerReveal(myPoke.transform.gameObject));
@@ -206,18 +214,19 @@ public class Combat_Manager : MonoBehaviour
             ball.GetComponent<SpriteRenderer>().enabled = false;
             CombatGUI.SendMessage("Reveal",SendMessageOptions.DontRequireReceiver);
             oppCombatGUI.SendMessage("Reveal",SendMessageOptions.DontRequireReceiver);
-
+ 
     }
-
-    public IEnumerator CombatTurn(){
+ 
+    public IEnumerator NormalCombatTurn(){
         yield return null;
     }
-
-
+ 
+ 
     public void FinishCombatCamera(string reason){
         StartCoroutine(RealFinishCombatCamera(reason));
+        myPoke.action = new Movement();
     }
-
+ 
     //Function used to finish the combat Camera.
     public IEnumerator RealFinishCombatCamera(string reason){
         if(reason == "flee"){
@@ -225,7 +234,7 @@ public class Combat_Manager : MonoBehaviour
             StartCoroutine(GUISay(Functions.getDialog("/battle/testFlee.json").content[0].list,true));
             yield return new WaitUntil(() => oppDialogManajer.GetComponent<defGuiListener>().hidden == true);
         }
-
+ 
         myPoke.SendMessage("End");
         oppPoke.SendMessage("End");
         
@@ -235,12 +244,10 @@ public class Combat_Manager : MonoBehaviour
         general.camera = "player";
         general.inCombat = false;
         GameObject fieldTop = GameObject.Find("battlefield_up");
-
-
-        
+ 
         CombatGUI.SendMessage("Hide");
         oppCombatGUI.SendMessage("Hide",null,SendMessageOptions.DontRequireReceiver);
-        yield return new WaitUntil(() => (CombatGUI.GetComponent<GuiListener>().HidenCent == true && oppCombatGUI.GetComponent<defGuiListener>().hidden == true));
+        yield return new WaitUntil(() => (CombatGUI.GetComponent<defGuiListener>().hidden == true && oppCombatGUI.GetComponent<defGuiListener>().hidden == true));
         yield return new WaitForSeconds(0.5f);
         fieldTop.SendMessage("Hide");
         switch_combat_mode(null);

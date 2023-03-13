@@ -13,14 +13,15 @@ public class Functions : MonoBehaviour
     public static GameObject FindSpecificChild(GameObject obj,string name){
         //Father transform.
         Transform trans = obj.transform;
-        //Children transform.
-        Transform childTrans = trans.Find(name);
+
+        for(int x = 0; x < trans.childCount; x++){
+            Transform item = trans.GetChild(x);
+            if(item.name == name){
+                return item.gameObject;
+            }
             
-        //If found, return GameObject.
-        if(childTrans != null){
-            //Debug.Log(childTrans.gameObject);
-            return childTrans.gameObject;
         }
+
 
         return null;
     }
@@ -95,16 +96,17 @@ public class Functions : MonoBehaviour
             //More conditions will be added in a future.
         }
 
-        for( int x = 0; x < pokemon.builtStats.moves.Length; x++){
+
+        for( int x = 0; x < 4; x++){
             if(movesArr.Count > 0){
                 string choosen = movesArr[Random.Range(0,movesArr.Count)];
                 movesArr.Remove(choosen);
-                pokemon.builtStats.moves[x] = Functions.BuildMovement(choosen);
+                pokemon.builtStats.moves.Add(Functions.BuildMovement(choosen));
             }
         }
         
 
-        if(pokemon.pokeball == null){
+        if(pokemon.pokeball == null || pokemon.pokeball == ""){
             pokemon.pokeball = "pokeball";
         }
 
@@ -387,6 +389,19 @@ public class Functions : MonoBehaviour
         }else{
             return null;
         }
+    }
+
+
+    //Function that returns the data of a type, it get searched based on the name, so...
+    //First parameter: string, name, the search index.
+    public static typeData getTypeByName(string name){
+        GeneralData general = GameObject.Find("GameManajer").GetComponent<GeneralData>();
+        foreach (typeData item in general.types){
+            if(name == item.name){
+                return item;
+            }
+        }
+        return null;
     }
 
 }
